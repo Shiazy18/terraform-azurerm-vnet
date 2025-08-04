@@ -7,3 +7,9 @@ variable "location" {
     type = string
     description = "location for your resource" 
 }
+
+variable "vnet_purpose" {
+    type = string
+    description = "Vnet Purpose"
+  
+}
