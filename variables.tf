@@ -13,3 +13,8 @@ variable "vnet_purpose" {
     description = "Vnet Purpose"
   
 }
+
+variable "address_space" {
+  type = string
+  description = "address space for vnet"
+}
