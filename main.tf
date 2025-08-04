@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "example-resources"
-  location = "West Europe"
+  name     = "${var.resource_group_name}-rg"
+  location = var.location
 }
 
 resource "azurerm_virtual_network" "my_terraform_network" {
