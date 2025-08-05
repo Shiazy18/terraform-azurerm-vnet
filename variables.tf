@@ -1,0 +1,20 @@
+variable "resource_group_name" {
+    type = string
+    description = "Purpose of Resource Group name"
+}
+
+variable "location" {
+    type = string
+    description = "location for your resource" 
+}
+
+variable "vnet_purpose" {
+    type = string
+    description = "Vnet Purpose"
+  
+}
+
+variable "address_space" {
+  type = string
+  description = "address space for vnet"
+}
