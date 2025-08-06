@@ -1,6 +1,7 @@
 variable "resource_group_name" {
     type = string
-    description = "Purpose of Resource Group name"
+    description = "Name of existing resource group (if rg_purpose is empty)"
+    default = ""
 }
 
 variable "location" {
@@ -22,7 +23,13 @@ variable "rg_purpose" {
 variable "vnet_purpose" {
     type = string
     description = "Vnet Purpose"
-  
+    default = ""
+}
+
+variable "virtual_network_name" {
+    type = string
+    description = "Vnet Purpose"
+    default = ""
 }
 
 variable "address_space" {
