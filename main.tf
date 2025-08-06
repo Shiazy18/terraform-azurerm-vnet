@@ -1,5 +1,6 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "${var.resource_group_name}-${var.location}-rg"
+  count = var.rg_purpose == "" ? 1:0  
+  name     = "${var.resource_group_name}-${var.location}-${var.rg_purpose}rg"
   location = var.location
 }
 

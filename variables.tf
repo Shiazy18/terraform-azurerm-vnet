@@ -12,6 +12,13 @@ variable "location" {
   }
 }
 
+variable "rg_purpose" {
+    type = string
+    description = "Purpose for the resource group. Leave empty to use an existing RG."
+    default = ""
+  
+}
+
 variable "vnet_purpose" {
     type = string
     description = "Vnet Purpose"
