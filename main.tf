@@ -1,7 +1,8 @@
 resource "azurerm_resource_group" "rg" {
-  count = var.rg_purpose == "" ? 0:1  
+  count    = var.rg_purpose == "" ? 0 : 1
   name     = "${var.resource_group_name}-${var.location}-${var.rg_purpose}-rg"
   location = var.location
+  #tags     = local.tags
 }
 
 resource "azurerm_virtual_network" "my_terraform_network" {
