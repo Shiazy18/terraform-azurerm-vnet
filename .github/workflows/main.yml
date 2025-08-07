@@ -33,4 +33,4 @@ jobs:
         run: terraform validate
 
       - name: Terraform fmt check
-        run: terraform fmt -check -recurssive
+        run: terraform fmt -check -recursive
