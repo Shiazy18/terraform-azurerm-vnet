@@ -10,4 +10,5 @@ resource "azurerm_virtual_network" "my_terraform_network" {
   address_space       = [var.address_space]
   location            = azurerm_resource_group.rg[0].location
   resource_group_name = local.rg_name
+  #tags = local.tags
 }
