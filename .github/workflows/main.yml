@@ -2,7 +2,7 @@ name: Terraform Module CI
 on:
   workflow_dispatch:
   pull_request:
-    types: [opened, reopened, synchronised]
+    types: [opened, reopened, edited, synchronize]
     branches:  
       - main
   push:
