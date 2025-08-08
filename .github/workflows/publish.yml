@@ -1,4 +1,4 @@
-name: Terraform Module CI
+name: Publish Terraform Module
 on:
   workflow_dispatch:
 
