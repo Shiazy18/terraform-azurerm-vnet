@@ -42,3 +42,31 @@ variable "address_space" {
   type        = list(string)
   description = "address space for vnet"
 }
+
+# variable "needed_peering" {
+#   type        = bool
+#   description = "is peering needed"
+#   default = "false"
+# }
+
+# variable "vnet_peering_resource_group_name" {
+#   type        = string
+#   description = "address space for vnet"
+# }
+
+
+# variable "vnet_peering_name" {
+#   type = string
+#   description = "Define Vnet Peering name"
+  
+# }
+
+# variable "vnet_peering" {
+#   type = list(object({
+#     source = string
+#     destination = string
+#   }))
+#   default = [ {
+    
+#   } ]
+# }

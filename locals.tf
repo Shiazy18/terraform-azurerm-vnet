@@ -13,4 +13,5 @@ locals {
   }
 
   rg_location = local.location_map[var.location]
+  
 }

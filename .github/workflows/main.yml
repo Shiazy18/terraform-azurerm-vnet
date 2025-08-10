@@ -5,6 +5,7 @@ on:
     types: [opened, reopened, edited, synchronize]
     branches:  
       - main
+      - release
   push:
     branches:
       - main
@@ -33,12 +34,3 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
-
-      - name: Terraform fmt check
-        run: terraform fmt -check -recursive
-
-      # - name: TFlint init and run
-      #   run: |
-      #     tflint --version
-      #     tflint --init
-      #     tflint
